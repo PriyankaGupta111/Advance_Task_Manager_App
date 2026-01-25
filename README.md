@@ -1,55 +1,61 @@
+# ✅ Advanced Task Manager – React Based Minor Project
+
+Advanced Task Manager is a React-based minor project that allows users to manage daily tasks efficiently.  
+The application focuses on understanding **React fundamentals, CRUD operations, and client-side data persistence** using localStorage.
+
+---
+
+## 🚀 Live Demo
+🔗 https://advance-task-manager-app-smoky.vercel.app
+
+---
+
+## 🛠️ Tech Stack Used
+
+- React.js
+- JavaScript (ES6)
+- HTML5
+- CSS3
+- Browser localStorage
+
+---
+
+## ✨ Features
+
+- ➕ Add new tasks
+- ✏️ Edit existing tasks
+- ❌ Delete tasks
+- 👁️ View all tasks in a list
+- 💾 Data persistence using browser localStorage
+- ⚡ Dynamic UI updates without page reload
+
+---
+
 ## 🔁 Application Flow
 
-Application Load
+1. When the application loads, existing tasks are fetched from **localStorage**.
+2. User adds a new task using the input field.
+3. Task is stored in **React state** and saved to **localStorage**.
+4. Users can edit or update any task.
+5. Users can delete tasks as required.
+6. Data remains persistent even after refreshing the page.
 
-User browser me application open karta hai
+---
 
-React app render hoti hai
+## 📌 What I Learned From This Project
 
-Existing tasks localStorage se fetch hoke UI me display hote hain
+- React component-based architecture
+- State management using React hooks
+- Implementing full **CRUD operations** in React
+- Using browser **localStorage** for client-side persistence
+- Building responsive and interactive user interfaces
 
-2️⃣ Add New Task
+---
 
-User task input field me task likhta hai
+## ⚙️ How to Run the Project Locally
 
-“Add Task” button click karta hai
-
-Task React state me add hota hai
-
-Updated task list localStorage me save ho jaati hai
-
-UI automatically re-render hoti hai
-
-3️⃣ View Tasks
-
-Saare tasks list ke form me dikhte hain
-
-Har task ka apna status hota hai (pending / completed)
-
-4️⃣ Update / Edit Task
-
-User kisi task ko edit karta hai
-
-Task state update hota hai
-
-Updated data dubara localStorage me store hota hai
-
-UI bina page reload ke update hoti hai
-
-5️⃣ Delete Task
-
-User delete button click karta hai
-
-Selected task state se remove ho jaata hai
-
-localStorage update hoti hai
-
-Task list UI se hat jaati hai instantly
-
-6️⃣ Data Persistence
-
-localStorage use hone ki wajah se:
-
-Page refresh ke baad bhi tasks delete nahi hote
-
-Data browser me persist rehta hai
+```bash
+git clone https://github.com/PriyankaGupta111/your-repo-name.git
+cd your-repo-name
+npm install
+npm start
