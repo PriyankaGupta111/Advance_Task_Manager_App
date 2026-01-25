@@ -1,16 +1,55 @@
-# React + Vite
+## 🔁 Application Flow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application Load
 
-Currently, two official plugins are available:
+User browser me application open karta hai
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React app render hoti hai
 
-## React Compiler
+Existing tasks localStorage se fetch hoke UI me display hote hain
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2️⃣ Add New Task
 
-## Expanding the ESLint configuration
+User task input field me task likhta hai
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+“Add Task” button click karta hai
+
+Task React state me add hota hai
+
+Updated task list localStorage me save ho jaati hai
+
+UI automatically re-render hoti hai
+
+3️⃣ View Tasks
+
+Saare tasks list ke form me dikhte hain
+
+Har task ka apna status hota hai (pending / completed)
+
+4️⃣ Update / Edit Task
+
+User kisi task ko edit karta hai
+
+Task state update hota hai
+
+Updated data dubara localStorage me store hota hai
+
+UI bina page reload ke update hoti hai
+
+5️⃣ Delete Task
+
+User delete button click karta hai
+
+Selected task state se remove ho jaata hai
+
+localStorage update hoti hai
+
+Task list UI se hat jaati hai instantly
+
+6️⃣ Data Persistence
+
+localStorage use hone ki wajah se:
+
+Page refresh ke baad bhi tasks delete nahi hote
+
+Data browser me persist rehta hai
