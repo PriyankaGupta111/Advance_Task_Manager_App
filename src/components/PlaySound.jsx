@@ -11,6 +11,6 @@ export const playSound = (type) =>{
   if(!sound) return;
   
   const audio = new Audio(sound);
-  audio.volume = 0.3
+  audio.volume = 0.1
   audio.play().catch(()=>{});
 }
